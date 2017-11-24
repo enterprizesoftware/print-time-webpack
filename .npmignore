@@ -5,3 +5,4 @@
 .gitignore
 .npmignore
 print-time-webpack.iml
+/docs
