@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+  - 8
+
+cache:
+  directories:
+  - node_modules
+
+deploy:
+  provider: npm
+  email: jameltoms@gmail.com
+  api_key:
+    secure: llD2XcFKzwZvs26zYATeYaYY+iJ+v/hYGBdLNDiQb/Ote3gyXs91n8FLCGIPqtcP4V/dXxPqY7zdCWAajplyE3/GsKyde+6v+Ir3ARs+QFmvtnFCSnA3zIPkOVfzT1OO7slor4rJ1dY7C5t1FGbJZh+ecBf1jqAWHcTuuPJyHECqxAmj2ckoP96B4MB0Rks3NJ9rpXHrnefVIz9/KPNPmQf3W47nLnJvtmNd+F3+nnbPZKm5RLxnEyK5dkqSfrH1qljYHOXAyxgGD5LZWfoawnQlhh4dU6lt5e5ts9EhKKusI8V1MMv4perMPu109vFDMAPQZBrxS0AJXjYIcTn5mix0oyZ3+PSmhLx1qSopTHcX8bcZIXc0Us88vkSivtdditRSM+lBSoIg/pWJVOj8W2XT+WTTaEPfk5+w9ILGtCmycuj/lFzm9H2gsTBDyG/LeGpxrVIrDL6VYLuL/v8pCMr+vY+fUmXe9FKrCg7zs/i6v7tX8ZsVd4NQEq3GZZHxYn9G4NYvHLVmpXiyBNbmWwEqq26U0vOnpJeGfIDf4ucKBEiWrDHu3E0OoPPXCoHByx8GyPPbTMItjUhmdfOPRFyLux+nvKTnGqNEvGX24sMhvD/BJzx9+6o7nzhstdVenISCFGXjLKvU3mVHGkqseLOnYQwOlbA3KPXF9ioToNc=
+  on:
+    tags: true
+    repo: enterprizesoftware/print-time-webpack
