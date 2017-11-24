@@ -1,0 +1,7 @@
+/.idea
+/node_modules
+/src
+.babelrc
+.gitignore
+.npmignore
+print-time-webpack.iml
