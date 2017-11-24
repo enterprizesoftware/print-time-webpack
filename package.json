@@ -2,12 +2,9 @@
   "name": "print-time-webpack",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/print-time-webpack-plugin.js",
+  "main": "print-time-webpack-plugin.js",
   "scripts": {
-    "build": "npx babel src --out-dir dist --source-maps",
-    "format": "npx prettier --no-config --single-quote --write 'src/**/*.js'",
-    "watch": "npx babel src --out-dir dist --source-maps --watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "./node_modules/.bin/prettier --no-config --single-quote --write '**/*.js'"
   },
   "repository": {
     "type": "git",
@@ -28,8 +25,6 @@
   },
   "homepage": "https://github.com/enterprizesoftware/print-time-webpack#readme",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
     "chalk": "^2.3.0",
     "prettier": "^1.8.2"
   }
