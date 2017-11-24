@@ -4,7 +4,7 @@
   "description": "",
   "main": "print-time-webpack-plugin.js",
   "scripts": {
-    "format": "./node_modules/.bin/prettier --no-config --single-quote --write '**/*.js'"
+    "format": "./node_modules/.bin/prettier --no-config --single-quote --write '**/*.js'",
     "test": "echo 'success'"
   },
   "repository": {
