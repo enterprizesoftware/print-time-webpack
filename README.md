@@ -4,6 +4,8 @@ This is a simple plugin that adds an underscore separator and appends a timestam
 to the end of your webpack watch builds. This will give you an indication when 
 the build has completed.
 
+Use version 2 for Webpack 4.
+
 ![Example of plugin in use](./docs/demo.gif)
 
 ## Install
