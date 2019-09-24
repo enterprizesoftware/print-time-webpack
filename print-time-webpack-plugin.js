@@ -9,10 +9,7 @@ PrintTimeWebpackPlugin.prototype.apply = function (compiler) {
       compiler.hooks.watchRun.tapAsync.bind(compiler.hooks.watchRun, 'PrintTimeWebpackPlugin') :
       compiler.plugin.bind(compiler, 'watch-run')
   )(function (compilation, callback) {
-    let separator = '';
-    for (let i = 0; i < 80; i++) separator += '_';
-    console.log('\n' + separator);
-
+    console.log(separator);
     callback();
   });
   (
@@ -34,5 +31,11 @@ function timestamp() {
   const date = new Date();
   return date.toLocaleDateString() + ' ' + date.toLocaleTimeString();
 }
+
+const separator = (function() {
+  let separator = '\n';
+  for (let i = 0; i < 80; i++) separator += '_';
+  return separator;
+})();
 
 module.exports = PrintTimeWebpackPlugin;
